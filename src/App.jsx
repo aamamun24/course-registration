@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div className='md:flex gap-6 container mx-auto'>
+      <div className='flex flex-col md:flex-row gap-6 container mx-auto mb-10 md:mb-20'>
         <Cards></Cards>
         <Carts></Carts>
       </div>

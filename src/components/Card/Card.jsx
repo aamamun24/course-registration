@@ -1,17 +1,24 @@
 import PropTypes from 'prop-types';
-import photo from '../../../public/Rectangle 2-4.png';
 import { FiDollarSign } from 'react-icons/fi';
-import { BsBookmarkCheckFill } from 'react-icons/bs';
+import { BsBook } from 'react-icons/bs';
 
-const Card = (props) => {
+const Card = ({ card }) => {
+    const { id, course_name, image, description, credit, price } = card;
     return (
         <div className='p-4 rounded-lg bg-white'>
-            <img className='w-full rounded-lg' src={photo} alt="" />
-            <h2 className='my-3 text-lg font-semibold text-[#1C1B1B]'>Introduction to C Programming</h2>
-            <p className='text-sm leading-6 text-[#1C1B1B99]'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <img className='w-full rounded-lg' src={image} alt="" />
+            <h2 className='my-3 text-lg font-semibold text-[#1C1B1B]'>{course_name}</h2>
+            <p className='text-sm leading-6 text-[#1C1B1B99] text-justify'>{description}</p>
             <div className='flex justify-between items-center mt-4'>
-                <p><FiDollarSign></FiDollarSign><span className='font-medium text-[#1C1B1B99]'>Price : 15000</span></p>
-                <p><BsBookmarkCheckFill></BsBookmarkCheckFill><span className='font-medium text-[#1C1B1B99]'>Credit : 1hr</span></p>
+                <div className='flex items-center gap-2'>
+                    <span className='text-2xl'><FiDollarSign></FiDollarSign></span>
+                    <p className='font-medium text-[#1C1B1B99]'>Price : {price}</p>
+                </div>
+                <div className='flex items-center gap-2'>
+                    <span className='text-2xl'><BsBook></BsBook></span>
+                    <p className='font-medium text-[#1C1B1B99]'>Credit : {credit}hr</p>
+                </div>
+
             </div>
             <button className='bg-[#2F80ED] my-3 rounded-lg text-lg font-semibold text-white w-full mt-6'>Select</button>
         </div>
@@ -19,7 +26,7 @@ const Card = (props) => {
 };
 
 Card.propTypes = {
-
+    card: PropTypes.object
 };
 
 export default Card;
