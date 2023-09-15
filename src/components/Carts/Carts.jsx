@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
+import Cart from '../Cart/Cart';
 
-const Carts = ({props}) => {
+const Carts = ({ carts }) => {
     return (
         <div className='md:w-1/3 lg:w-1/4'>
             <div className='bg-white p-6 rounded-lg'>
@@ -8,9 +9,12 @@ const Carts = ({props}) => {
                 <div>
                     <h3 className='text-xl font-bold text-[#1C1B1B] mt-4'>Course Name</h3>
                     <ol className='my-5 list-decimal list-inside text-[#1C1B1B99] leading-7'>
-                        <li>Introduction to C Programming</li>
-                        <li>Introduction to C Programming</li>
-                        <li>Introduction to C Programming</li>
+                        {
+                            carts.map((cart, idx) => <Cart
+                                key={idx}
+                                cart={cart}
+                            ></Cart>)
+                        }
                     </ol>
                 </div>
                 <p className='text-[#1C1B1BCC] font-medium border-y py-4'>Total Credit Hour : 13</p>
@@ -21,7 +25,7 @@ const Carts = ({props}) => {
 };
 
 Carts.propTypes = {
-
+    carts: PropTypes.array
 };
 
 export default Carts;

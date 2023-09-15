@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Card from '../Card/Card';
 import { useEffect, useState } from 'react';
 
-const Cards = (props) => {
+const Cards = ({ handleSelectToCart }) => {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
@@ -16,6 +16,7 @@ const Cards = (props) => {
                 cards.map(card => <Card
                     key={card.id}
                     card={card}
+                    handleSelectToCart={handleSelectToCart}
                 ></Card>)
             }
 
@@ -24,7 +25,7 @@ const Cards = (props) => {
 };
 
 Cards.propTypes = {
-
+    handleSelectToCart: PropTypes.func
 };
 
 export default Cards;
