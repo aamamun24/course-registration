@@ -38,10 +38,10 @@ function App() {
         }));
       }
       else {
+        setCarts([...carts, card]);
         setCredits(credit);
         setRemaining(remaining)
-        setCarts([...carts, card]);
-        setPrice(price + card.price)
+        setPrice(price + card.price);
       }
     }
   }

@@ -3,7 +3,7 @@ import { FiDollarSign } from 'react-icons/fi';
 import { BsBook } from 'react-icons/bs';
 
 const Card = ({ card, handleSelectToCart, ToastContainer }) => {
-    const { id, course_name, image, description, credit, price } = card;
+    const { course_name, image, description, credit, price } = card;
     return (
         <div className='p-4 rounded-lg bg-white'>
             <img className='w-full rounded-lg' src={image} alt="" />
