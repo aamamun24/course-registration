@@ -12,7 +12,7 @@
     "course_name": "Introduction to Algorithms",
     "image": "https://i.ibb.co/3dZWkP3/Rectangle-2-3.png",
     "description": "Explore the world of algorithms, problem-solving techniques, and algorithmic thinking in this comprehensive course.",
-    "credit": 4,
+    "credit": 6,
     "price": 20000
   },
   {
@@ -28,7 +28,7 @@
     "course_name": "Basic Data Structures",
     "image": "https://i.ibb.co/X3Ggp3q/Rectangle-3.png",
     "description": "Dive into essential data structures like arrays, linked lists, and trees to solve complex programming problems.",
-    "credit": 3,
+    "credit": 4,
     "price": 12000
   },
   {
@@ -44,7 +44,7 @@
     "course_name": "Software Engineering",
     "image": "https://i.ibb.co/4YynBbj/Rectangle-2-5.png",
     "description": "Learn the principles of software engineering, from requirements analysis to software design and testing.",
-    "credit": 4,
+    "credit": 3,
     "price": 28000
   },
   {
@@ -52,7 +52,7 @@
     "course_name": "AWS, Cloud Computing",
     "image": "https://i.ibb.co/dQhzSY7/Rectangle-3-1.png",
     "description": "Become proficient in Amazon Web Services (AWS) and cloud computing to deploy and manage scalable applications.",
-    "credit": 3,
+    "credit": 5,
     "price": 22000
   },
   {
@@ -68,7 +68,7 @@
     "course_name": "Problem-Solving Part",
     "image": "https://i.ibb.co/SNfB9cf/Rectangle-2-6.png",
     "description": "Enhance your problem-solving skills through a variety of puzzles, challenges, and real-world problem-solving scenarios.",
-    "credit": 3,
+    "credit": 4,
     "price": 19000
   }
 ]
